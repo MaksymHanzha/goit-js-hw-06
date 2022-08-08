@@ -9,6 +9,7 @@ function valueBlur(text) {
   } else if (text.currentTarget.value.length !== Number(input.dataset.length)) {
     input.classList.add("invalid");
   } else {
+    input.classList.remove("invalid");
     input.classList.add("valid");
   }
 }
