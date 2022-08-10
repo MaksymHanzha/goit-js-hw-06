@@ -7,6 +7,7 @@ function valueBlur(text) {
     input.classList.remove("valid");
     input.classList.remove("invalid");
   } else if (text.currentTarget.value.length !== Number(input.dataset.length)) {
+    input.classList.remove("valid");
     input.classList.add("invalid");
   } else {
     input.classList.remove("invalid");
